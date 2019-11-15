@@ -2,5 +2,8 @@
   "name": "node-http-agent",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cli": "^1.0.1"
+  }
 }
