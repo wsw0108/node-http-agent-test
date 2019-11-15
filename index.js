@@ -27,6 +27,7 @@ const req = http.request(u, res => {
   res.on("end", () => {
     console.log("Response(Headers of Request): ");
     console.log(Buffer.concat(data).toString());
+    console.log(res.headers);
   });
 });
 req.end();

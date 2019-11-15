@@ -20,6 +20,7 @@ func init() {
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		<-time.After(100 * time.Millisecond)
 		r.Header.Write(w)
 	})
 	srv := http.Server{
